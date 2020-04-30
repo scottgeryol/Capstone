@@ -1,0 +1,2 @@
+class IngredientUser < ApplicationRecord
+end
