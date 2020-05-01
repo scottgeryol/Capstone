@@ -31,7 +31,6 @@ ActiveRecord::Schema.define(version: 2020_04_30_014141) do
 
   create_table "images", force: :cascade do |t|
     t.string "url"
-    t.integer "ingredient_id"
     t.integer "recipe_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -40,6 +39,7 @@ ActiveRecord::Schema.define(version: 2020_04_30_014141) do
   create_table "ingredient_recipes", force: :cascade do |t|
     t.integer "ingredient_id"
     t.integer "recipe_id"
+    t.string "quantity"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -53,6 +53,7 @@ ActiveRecord::Schema.define(version: 2020_04_30_014141) do
 
   create_table "ingredients", force: :cascade do |t|
     t.string "name"
+    t.string "image_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -67,11 +68,10 @@ ActiveRecord::Schema.define(version: 2020_04_30_014141) do
   create_table "recipes", force: :cascade do |t|
     t.string "name"
     t.string "description"
-    t.integer "ingredient_id"
-    t.string "quantity"
     t.string "directions"
     t.string "notes"
     t.integer "user_id"
+    t.string "image_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

@@ -1,9 +1,9 @@
 class Recipe < ApplicationRecord
   belongs_to :user
-  belongs_to :ingredients
-  has_many :recipeUser
-  has_many :ingredientUser
-  has_many :ingredientRecipe
+  belongs_to :ingredient
+  has_many :recipeUsers
+  has_many :ingredientUsers
+  has_many :ingredientRecipes
   has_many :users, through: :RecipeUser
   has_many :ingredients, through: :IngredientRecipe
   has_many :images
