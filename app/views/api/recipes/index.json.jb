@@ -1,10 +1,11 @@
-@recipes. do map |recipe|
-{
-  id: recipe.id,
-  description: recipe.description,
-  directions: recipe.directions,
-  notes: recipe.notes,
-  user_id: recipe.user_id,
-  image_url: recipe.image_url,
-}
+@recipes.map do |recipe|
+  {
+    id: recipe.id,
+    description: recipe.description,
+    directions: recipe.directions,
+    prep_time: recipe.prep_time,
+    notes: recipe.notes,
+    user_id: recipe.user_id,
+    image_url: recipe.image_url,
+  }
 end

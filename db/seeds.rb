@@ -40,7 +40,7 @@ IngredientRecipe.create!({ ingredient_id: 1, recipe_id: 1, quantity: "2 slice" }
 IngredientRecipe.create!({ ingredient_id: 2, recipe_id: 1, quantity: "1 tsp" })
 IngredientRecipe.create!({ ingredient_id: 3, recipe_id: 1, quantity: "2oz" })
 IngredientRecipe.create!({ ingredient_id: 4, recipe_id: 1, quantity: "1" })
-IngredientRecipe.create!({ ingredient_id: 5, recipe_id: 1, quantity: "2" })
+IngredientRecipe.create!({ ingredient_id: 5, recipe_id: 1, quantity: "2 (optional)" })
 IngredientRecipe.create!({ ingredient_id: 6, recipe_id: 1, quantity: ".5 tsp" })
 IngredientRecipe.create!({ ingredient_id: 14, recipe_id: 1, quantity: ".5 tsp" })
 IngredientRecipe.create!({ ingredient_id: 16, recipe_id: 1, quantity: "1 oz" })
