@@ -42,6 +42,7 @@ IngredientRecipe.create!({ ingredient_id: 3, recipe_id: 1, quantity: "2oz" })
 IngredientRecipe.create!({ ingredient_id: 4, recipe_id: 1, quantity: "1" })
 IngredientRecipe.create!({ ingredient_id: 5, recipe_id: 1, quantity: "2" })
 IngredientRecipe.create!({ ingredient_id: 6, recipe_id: 1, quantity: ".5 tsp" })
+IngredientRecipe.create!({ ingredient_id: 14, recipe_id: 1, quantity: ".5 tsp" })
 IngredientRecipe.create!({ ingredient_id: 16, recipe_id: 1, quantity: "1 oz" })
 recipe = Recipe.create!({ name: "Banana Bread", description: "Dense and sweet traditional banana bread", directions: "Mix all dry ingredients in a bowl, smash 4 very ripe bananas...", notes: "...", user_id: 2 })
 IngredientRecipe.create!({ ingredient_id: 7, recipe_id: 2, quantity: "1 1/2 cup" })
@@ -80,16 +81,54 @@ supplier = Supplier.create!({ name: "Instacart", phone_number: "555-555-5555", e
 supplier = Supplier.create!({ name: "Amazon Fresh", phone_number: "000-000-0000", email: "amazonfresh@example.com" })
 
 recipe_user = RecipeUser.create!({ recipe_id: 4, user_id: 1 }) #cookbook
-recipe_user = RecipeUser.create!({ recipe_id: 2, user_id: 3 })
-recipe_user = RecipeUser.create!({ recipe_id: 1, user_id: 4 })
-recipe_user = RecipeUser.create!({ recipe_id: 3, user_id: 2 })
+recipe_user = RecipeUser.create!({ recipe_id: 2, user_id: 1 }) #cookbook
+recipe_user = RecipeUser.create!({ recipe_id: 3, user_id: 1 }) #cookbook
+recipe_user = RecipeUser.create!({ recipe_id: 1, user_id: 1 }) #cookbook
+recipe_user = RecipeUser.create!({ recipe_id: 2, user_id: 2 }) #cookbook
+recipe_user = RecipeUser.create!({ recipe_id: 1, user_id: 3 }) #cookbook
+recipe_user = RecipeUser.create!({ recipe_id: 3, user_id: 4 }) #cookbook
 
 ingredient_user = IngredientUser.create!({ ingredient_id: 1, user_id: 1 }) #pantry
-ingredient_user = IngredientUser.create!({ ingredient_id: 1, user_id: 1 }) #pantry
-ingredient_user = IngredientUser.create!({ ingredient_id: 1, user_id: 1 }) #pantry
-ingredient_user = IngredientUser.create!({ ingredient_id: 1, user_id: 1 }) #pantry
-ingredient_user = IngredientUser.create!({ ingredient_id: 1, user_id: 1 }) #pantry
-ingredient_user = IngredientUser.create!({ ingredient_id: 1, user_id: 1 }) #pantry
+ingredient_user = IngredientUser.create!({ ingredient_id: 2, user_id: 1 }) #pantry
+ingredient_user = IngredientUser.create!({ ingredient_id: 3, user_id: 1 }) #pantry
+ingredient_user = IngredientUser.create!({ ingredient_id: 4, user_id: 1 }) #pantry
+ingredient_user = IngredientUser.create!({ ingredient_id: 5, user_id: 1 }) #pantry
+ingredient_user = IngredientUser.create!({ ingredient_id: 16, user_id: 1 }) #pantry
+ingredient_user = IngredientUser.create!({ ingredient_id: 6, user_id: 1 }) #pantry
+ingredient_user = IngredientUser.create!({ ingredient_id: 16, user_id: 2 }) #pantry
+ingredient_user = IngredientUser.create!({ ingredient_id: 4, user_id: 2 }) #pantry
+ingredient_user = IngredientUser.create!({ ingredient_id: 6, user_id: 2 }) #pantry
+ingredient_user = IngredientUser.create!({ ingredient_id: 22, user_id: 2 }) #pantry
+ingredient_user = IngredientUser.create!({ ingredient_id: 20, user_id: 2 }) #pantry
+ingredient_user = IngredientUser.create!({ ingredient_id: 23, user_id: 2 }) #pantry
+ingredient_user = IngredientUser.create!({ ingredient_id: 27, user_id: 2 }) #pantry
+ingredient_user = IngredientUser.create!({ ingredient_id: 28, user_id: 2 }) #pantry
+ingredient_user = IngredientUser.create!({ ingredient_id: 26, user_id: 2 }) #pantry
+ingredient_user = IngredientUser.create!({ ingredient_id: 30, user_id: 2 }) #pantry
+ingredient_user = IngredientUser.create!({ ingredient_id: 31, user_id: 2 }) #pantry
+ingredient_user = IngredientUser.create!({ ingredient_id: 21, user_id: 2 }) #pantry
+ingredient_user = IngredientUser.create!({ ingredient_id: 14, user_id: 2 }) #pantry
+ingredient_user = IngredientUser.create!({ ingredient_id: 16, user_id: 3 }) #pantry
+ingredient_user = IngredientUser.create!({ ingredient_id: 14, user_id: 3 }) #pantry
+ingredient_user = IngredientUser.create!({ ingredient_id: 16, user_id: 3 }) #pantry
+ingredient_user = IngredientUser.create!({ ingredient_id: 5, user_id: 3 }) #pantry
+ingredient_user = IngredientUser.create!({ ingredient_id: 6, user_id: 3 }) #pantry
+ingredient_user = IngredientUser.create!({ ingredient_id: 7, user_id: 3 }) #pantry
+ingredient_user = IngredientUser.create!({ ingredient_id: 16, user_id: 3 }) #pantry
+ingredient_user = IngredientUser.create!({ ingredient_id: 18, user_id: 3 }) #pantry
+ingredient_user = IngredientUser.create!({ ingredient_id: 17, user_id: 3 }) #pantry
+ingredient_user = IngredientUser.create!({ ingredient_id: 20, user_id: 3 }) #pantry
+ingredient_user = IngredientUser.create!({ ingredient_id: 22, user_id: 3 }) #pantry
+ingredient_user = IngredientUser.create!({ ingredient_id: 16, user_id: 4 }) #pantry
+ingredient_user = IngredientUser.create!({ ingredient_id: 14, user_id: 4 }) #pantry
+ingredient_user = IngredientUser.create!({ ingredient_id: 15, user_id: 4 }) #pantry
+ingredient_user = IngredientUser.create!({ ingredient_id: 16, user_id: 2 }) #pantry
+ingredient_user = IngredientUser.create!({ ingredient_id: 19, user_id: 2 }) #pantry
+ingredient_user = IngredientUser.create!({ ingredient_id: 20, user_id: 2 }) #pantry
+ingredient_user = IngredientUser.create!({ ingredient_id: 25, user_id: 2 }) #pantry
+ingredient_user = IngredientUser.create!({ ingredient_id: 27, user_id: 2 }) #pantry
+ingredient_user = IngredientUser.create!({ ingredient_id: 14, user_id: 2 }) #pantry
+ingredient_user = IngredientUser.create!({ ingredient_id: 15, user_id: 2 }) #pantry
 
 # image = Image.create!({ url: "https://hips.hearstapps.com/hmg-prod/images/sourdough-bread-horizontal-half-1547669255.png?crop=1.00xw%3A0.847xh%3B0%2C0.0528xh&resize=480%3A270", ingredient_id: 1, recipe_id: 1 })
 # image = Image.create!({ url: "https://prettysimplesweet.com/wp-content/uploads/2018/04/Easy-Banana-Bread-Recipe.jpg", ingredient_id: 8, recipe_id: 2 })
