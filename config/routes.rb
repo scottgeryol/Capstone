@@ -6,6 +6,12 @@ Rails.application.routes.draw do
     patch "/recipes/:id" => "recipes#update"
     delete "/recipes/:id" => "recipes#destroy"
 
+    get "/ingredients" => "ingredients#index"
+    post "/ingredients" => "ingredients#create"
+    get "/ingredients/:id" => "ingredients#show"
+    patch "/ingredients/:id" => "ingredients#update"
+    delete "/ingredients/:id" => "ingredients#destroy"
+
     post "/users" => "users#create"
     post "/sessions" => "sessions#create"
   end

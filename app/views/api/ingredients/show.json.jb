@@ -1,0 +1,4 @@
+{
+  id: @ingredient.id,
+  name: @ingredient.name,
+}
