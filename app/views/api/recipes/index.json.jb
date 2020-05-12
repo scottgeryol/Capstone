@@ -8,5 +8,6 @@
     notes: recipe.notes,
     user_id: recipe.user_id,
     image_url: recipe.image_url,
+    ingredients: recipe.ingredients,
   }
 end

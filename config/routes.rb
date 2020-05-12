@@ -12,6 +12,8 @@ Rails.application.routes.draw do
     patch "/ingredients/:id" => "ingredients#update"
     delete "/ingredients/:id" => "ingredients#destroy"
 
+    get "/groceries" => "groceries#index"
+
     post "/users" => "users#create"
     post "/sessions" => "sessions#create"
   end
