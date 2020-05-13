@@ -13,6 +13,7 @@ Rails.application.routes.draw do
     delete "/ingredients/:id" => "ingredients#destroy"
 
     get "/ingredient_users" => "ingredient_users#index"
+    post "/ingredient_users" => "ingredient_users#create"
 
     get "/groceries" => "groceries#index"
 
