@@ -9,6 +9,7 @@ class Api::RecipesController < ApplicationController
       # name: params[:name],
       # chef: params[:chef],
       description: params[:description],
+      ingredients: params[:ingredients],
       directions: params[:directions],
       prep_time: params[:prep_time],
       notes: params[:notes],
