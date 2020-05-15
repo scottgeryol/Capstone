@@ -3,5 +3,6 @@
     id: ingredient.id,
     name: ingredient.name,
     price: ingredient.price,
+    image_url: ingredient.image_url,
   }
 end

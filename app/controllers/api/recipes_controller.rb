@@ -6,10 +6,10 @@ class Api::RecipesController < ApplicationController
 
   def create
     @recipe = Recipe.new(
-      # name: params[:name],
-      # chef: params[:chef],
+      name: params[:name],
+      chef: params[:chef],
       description: params[:description],
-      ingredients: params[:ingredients],
+      # ingredients: params[:ingredients],
       directions: params[:directions],
       prep_time: params[:prep_time],
       notes: params[:notes],
