@@ -1,6 +1,6 @@
 class Api::IngredientUsersController < ApplicationController
   def index
-    @ingredient_users = IngredientUser.where(user_id: current_user.id)
+    @ingredient_users = IngredientUser.where(user_id: current_user)
     render "index.json.jb"
   end
 
