@@ -1,6 +1,5 @@
 {
-  id: ingredient_user.id,
-  ingredient: ingredient_user.ingredient,
-  user_id: current_user.id,
-# user: ingredient_user.user,
+  id: @ingredient_user.id,
+  ingredient_id: @ingredient_user.ingredient_id,
+  user_id: @ingredient_user.user_id,
 }

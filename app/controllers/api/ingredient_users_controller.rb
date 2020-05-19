@@ -5,9 +5,11 @@ class Api::IngredientUsersController < ApplicationController
   end
 
   def create
-    @ingredient_users = IngredientUser.new(
-      ingredient: params[:ingredient],
+    @ingredient_user = IngredientUser.new(
+      ingredient_id: params[:ingredient_id],
+      user_id: current_user.id,
     )
+    @ingredient_user.save
     render "show.json.jb"
   end
 end
