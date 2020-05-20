@@ -1,7 +1,8 @@
 class Api::CartedProductsController < ApplicationController
   def index
     # @carted_products = CartedProduct.where(user_id: current_user.id, status: "carted")
-    @carted_products = current_user.carted_products.where(status: "carted")
+    # @carted_products = current_user.carted_products.where(status: "carted")\    @carted_products = current_user.shopping_cart
+    @carted_products = current_user.shopping_cart
     render "index.json.jb"
   end
 
