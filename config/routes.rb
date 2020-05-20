@@ -17,6 +17,7 @@ Rails.application.routes.draw do
 
     get "/groceries" => "groceries#index"
 
+    get "/carted_products" => "carted_products#index"
     post "/carted_products" => "carted_products#create"
 
     post "/users" => "users#create"
