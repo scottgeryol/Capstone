@@ -9,4 +9,6 @@ class User < ApplicationRecord
   has_many :ingredients, through: :ingredientRecipe
   has_many :groceries
   has_many :recipes, through: :groceries
+  has_many :orders
+  has_many :carted_products
 end
