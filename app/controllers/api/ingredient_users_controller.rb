@@ -5,7 +5,7 @@ class Api::IngredientUsersController < ApplicationController
   end
 
   def create
-    @ingredient_user = IngredientUser.new(
+    @ingredient_user = IngredientUser.find_or_initialize_by(
       ingredient_id: params[:ingredient_id],
       user_id: current_user.id,
     )

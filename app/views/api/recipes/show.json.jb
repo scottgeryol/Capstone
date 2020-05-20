@@ -8,5 +8,5 @@
   prep_time: @recipe.prep_time,
   notes: @recipe.notes,
   image_url: @recipe.image_url,
-# ingredients: @recipe.ingredients,
+  ingredients: @recipe.ingredients,
 }
