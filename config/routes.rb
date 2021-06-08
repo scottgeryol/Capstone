@@ -27,5 +27,7 @@ Rails.application.routes.draw do
     post "/sessions" => "sessions#create"
 
     get "/recipesearch" => "recipesearch#index"
+
+    get "/*path" => proc { [200, {}, [ActionView::Base.new.render(file: "public/index.html")]] }
   end
 end

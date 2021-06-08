@@ -3,7 +3,6 @@
   name: @recipe.name,
   chef: @recipe.chef,
   description: @recipe.description,
-  # ingredients: @recipe.ingredients,
   directions: @recipe.directions,
   prep_time: @recipe.prep_time,
   notes: @recipe.notes,
